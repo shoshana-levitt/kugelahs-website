@@ -8,7 +8,7 @@ const Navbar = () => {
       <ul className="hidden h-full gap-12 lg:flex">
         <li>
           {" "}
-          <Link href="/">
+          <Link href="/home">
             <Image src="/logo.jpeg" alt="logo" width={150} height={150} />
           </Link>
         </li>
