@@ -3,7 +3,7 @@ import Kugels from "@/components/Kugels";
 
 export default function KugelsPage() {
   return (
-    <div>
+    <div className="pagecontainer">
       <Head>
         <title>Kugelas - Kugels</title>
       </Head>

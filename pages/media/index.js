@@ -3,7 +3,7 @@ import Media from "@/components/Media";
 
 export default function MediaPage() {
   return (
-    <div>
+    <div className="pagecontainer">
       <Head>
         <title>Kugelas - Media</title>
       </Head>

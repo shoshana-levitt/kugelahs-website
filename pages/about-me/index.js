@@ -7,9 +7,7 @@ export default function AboutMePage() {
       <Head>
         <title>Kugelas - About Me</title>
       </Head>
-      <div>
-        <AboutMe />
-      </div>
+      <AboutMe />
     </div>
   );
 }
