@@ -19,3 +19,9 @@
 body {
   background-color: rgb(248, 182, 226);
 }
+
+@content-container: {
+  width: 50;
+  height: 50;
+  border-color: red;
+};

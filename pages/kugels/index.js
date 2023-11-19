@@ -1,12 +1,13 @@
 import Head from "next/head";
+import Kugels from "@/components/Kugels";
 
 export default function KugelsPage() {
   return (
-    <section>
+    <div>
       <Head>
         <title>Kugelas - Kugels</title>
       </Head>
-      <h1>My Kugels</h1>
-    </section>
+      <Kugels />
+    </div>
   );
 }

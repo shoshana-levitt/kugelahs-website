@@ -1,12 +1,13 @@
 import Head from "next/head";
+import Buy from "@/components/Buy";
 
-export default function Buy() {
+export default function BuyPage() {
   return (
-    <section>
+    <div>
       <Head>
         <title>Kugelas - Buy</title>
       </Head>
-      <h1>Buy</h1>
-    </section>
+      <Buy />
+    </div>
   );
 }

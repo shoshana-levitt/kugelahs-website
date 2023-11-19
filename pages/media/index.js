@@ -1,12 +1,13 @@
 import Head from "next/head";
+import Media from "@/components/Media";
 
-export default function Media() {
+export default function MediaPage() {
   return (
-    <section>
+    <div>
       <Head>
         <title>Kugelas - Media</title>
       </Head>
-      <h1>Media</h1>
-    </section>
+      <Media />
+    </div>
   );
 }
