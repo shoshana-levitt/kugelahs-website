@@ -20,8 +20,14 @@ body {
   background-color: rgb(248, 182, 226);
 }
 
-@content-container: {
-  width: 50;
-  height: 50;
-  border-color: red;
-};
+/* @layer components {
+  .container {
+    padding-left: 50;
+  }
+} */
+
+@layer utilities {
+  .pagecontainer {
+    @apply mx-60 pt-52;
+  }
+}
