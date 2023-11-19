@@ -9,7 +9,7 @@ const Navbar = () => {
         <li>
           {" "}
           <Link href="/">
-            <Image src="/kugelahs-logo.svg" alt="logo" width={74} height={29} />
+            <Image src="/logo.jpeg" alt="logo" width={150} height={150} />
           </Link>
         </li>
         {NAV_LINKS.map((link) => (
