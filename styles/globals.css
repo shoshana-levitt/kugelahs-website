@@ -28,6 +28,6 @@ body {
 
 @layer utilities {
   .pagecontainer {
-    @apply mx-60 pt-52;
+    @apply mx-60 pt-20;
   }
 }
