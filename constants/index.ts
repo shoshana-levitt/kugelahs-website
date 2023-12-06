@@ -1,4 +1,8 @@
 // NAVIGATION
+import Email from "@mui/icons-material/Email";
+import PhoneIphone from "@mui/icons-material/PhoneIphone";
+import Instagram from "@mui/icons-material/Instagram";
+
 export const NAV_LINKS = [
   { href: "/", key: "home", label: "Home" },
   { href: "/about-me", key: "about_me", label: "About Me" },
@@ -23,5 +27,21 @@ export const PRESS_ARTICLES = [
     blurb: `"blurb..."`,
     imageUrl: "/canvas-rebel-logo.jpg",
     url: "https://canvasrebel.com/meet-robin-weiss/ ",
+  },
+];
+
+export const FOOTER_INFO = [
+  {
+    key: "email",
+    icon: Email,
+    text: "koolkugels@gmail.com",
+    link: "mailto:koolkugels@gmail.com",
+  },
+  { key: "phone", icon: PhoneIphone, text: "(914) 400 - 9309" },
+  {
+    key: "instagram-kugelahs",
+    icon: Instagram,
+    text: "@kugelahs",
+    link: "https://www.instagram.com/kugelahs/",
   },
 ];

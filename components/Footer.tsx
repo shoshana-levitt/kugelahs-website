@@ -1,14 +1,23 @@
 import { NAV_LINKS } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
-import { AppBar, Toolbar, Box, Stack } from "@mui/material";
+import { Button, IconButton, AppBar, Toolbar, Box, Stack } from "@mui/material";
+import {
+  Home,
+  LinkedIn,
+  GitHub,
+  Email,
+  Description,
+  PhoneIphoneIcon,
+} from "@mui/icons-material";
+import { FOOTER_INFO } from "@/constants";
 
 const Footer = () => {
   return (
     <div>
       <AppBar
         position="fixed"
-        style={{ backgroundColor: "rgb(248, 182, 226)", boxShadow: "none" }}
+        style={{ backgroundColor: "rgb(255, 244, 214);", boxShadow: "none" }}
         sx={{ top: "auto", bottom: 0 }}
       >
         <Toolbar sx={{ p: 1 }}>
@@ -19,17 +28,23 @@ const Footer = () => {
               alignItems="center"
               spacing={5}
             >
-              <Link href="/">
-                <Image src="/logo.jpeg" alt="logo" width={75} height={75} />
-              </Link>
-              {NAV_LINKS.map((link) => (
-                <Link
-                  href={link.href}
-                  key={link.key}
-                  className="regular-16 text-black flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold"
+              {FOOTER_INFO.map((item) => (
+                <Button
+                  startIcon={<item.icon />}
+                  href={"google.com"}
+                  target="_blank"
+                  disableRipple
+                  sx={{
+                    color: "black",
+                    m: 1,
+                    ":hover": {
+                      backgroundColor: "transparent",
+                      color: "grey",
+                    },
+                  }}
                 >
-                  {link.label}
-                </Link>
+                  {item.text}
+                </Button>
               ))}
             </Stack>
           </Box>
