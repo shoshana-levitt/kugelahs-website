@@ -42,6 +42,7 @@ const Footer = () => {
                       color: "grey",
                     },
                   }}
+                  style={{ textTransform: "none" }}
                 >
                   {item.text}
                 </Button>
