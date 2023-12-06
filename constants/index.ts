@@ -37,11 +37,27 @@ export const FOOTER_INFO = [
     text: "koolkugels@gmail.com",
     link: "mailto:koolkugels@gmail.com",
   },
-  { key: "phone", icon: PhoneIphone, text: "(914) 400 - 9309" },
+  {
+    key: "phone",
+    icon: PhoneIphone,
+    text: "(914) 400 - 9309",
+  },
   {
     key: "instagram-kugelahs",
     icon: Instagram,
     text: "@kugelahs",
     link: "https://www.instagram.com/kugelahs/",
+  },
+  {
+    key: "instagram-robin",
+    icon: Instagram,
+    text: "@robinlle990",
+    link: "https://www.instagram.com/robinlle99/",
+  },
+  {
+    key: "instagram-kugels-and-komedians",
+    icon: Instagram,
+    text: "@kugelsandkomedians",
+    link: "https://www.instagram.com/kugelsandkomedians/",
   },
 ];

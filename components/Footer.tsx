@@ -20,25 +20,45 @@ const Footer = () => {
               alignItems="center"
               spacing={5}
             >
-              {FOOTER_INFO.map((item) => (
-                <Button
-                  startIcon={<item.icon />}
-                  href={"google.com"}
-                  target="_blank"
-                  disableRipple
-                  sx={{
-                    color: "black",
-                    m: 1,
-                    ":hover": {
-                      backgroundColor: "transparent",
-                      color: "grey",
-                    },
-                  }}
-                  style={{ textTransform: "none" }}
-                >
-                  {item.text}
-                </Button>
-              ))}
+              {FOOTER_INFO.map((item) =>
+                item.link ? (
+                  <Button
+                    size="small"
+                    startIcon={<item.icon />}
+                    href={item.link}
+                    target="_blank"
+                    disableRipple
+                    sx={{
+                      color: "black",
+                      m: 1,
+                      ":hover": {
+                        backgroundColor: "transparent",
+                        color: "grey",
+                      },
+                    }}
+                    style={{ textTransform: "none" }}
+                  >
+                    {item.text}
+                  </Button>
+                ) : (
+                  <Button
+                    size="small"
+                    startIcon={<item.icon />}
+                    disableRipple
+                    sx={{
+                      color: "black",
+                      m: 1,
+                      ":hover": {
+                        backgroundColor: "transparent",
+                        cursor: "default",
+                      },
+                    }}
+                    style={{ textTransform: "none" }}
+                  >
+                    {item.text}
+                  </Button>
+                )
+              )}
             </Stack>
           </Box>
         </Toolbar>
