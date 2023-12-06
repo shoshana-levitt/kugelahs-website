@@ -1,15 +1,7 @@
 import { NAV_LINKS } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
-import { Button, IconButton, AppBar, Toolbar, Box, Stack } from "@mui/material";
-import {
-  Home,
-  LinkedIn,
-  GitHub,
-  Email,
-  Description,
-  PhoneIphoneIcon,
-} from "@mui/icons-material";
+import { Button, AppBar, Toolbar, Box, Stack } from "@mui/material";
 import { FOOTER_INFO } from "@/constants";
 
 const Footer = () => {
@@ -18,10 +10,10 @@ const Footer = () => {
       <AppBar
         position="fixed"
         style={{ backgroundColor: "rgb(255, 244, 214);", boxShadow: "none" }}
-        sx={{ top: "auto", bottom: 0 }}
+        sx={{ top: "auto", bottom: 0, p: 0.01 }}
       >
-        <Toolbar sx={{ p: 1 }}>
-          <Box sx={{ display: "flexBetween", flexGrow: 1 }}>
+        <Toolbar>
+          <Box sx={{ mx: "auto" }}>
             <Stack
               direction="row"
               justifyContent="center"
