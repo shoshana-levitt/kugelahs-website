@@ -5,9 +5,12 @@ import {
   Card,
   CardContent,
   CardMedia,
+  CardHeader,
   Typography,
   CardActionArea,
+  Stack,
 } from "@mui/material";
+import { PRESS_ARTICLES } from "@/constants";
 
 const Press = () => {
   const pageVariant = {
@@ -36,48 +39,40 @@ const Press = () => {
         initial="hidden"
         animate={control}
       >
-        <Card sx={{ width: 300, maxWidth: 345 }}>
-          <CardActionArea>
-            <CardMedia
-              component="img"
-              height="140"
-              image="/shabbat-drop-logo.jpeg"
-              alt="green iguana"
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
-                The Shabbat Drop
-              </Typography>
-              <Typography variant="h6" color="text.secondary">
-                Meet Robin Weiss, Kugel Kween
-              </Typography>
-              <Typography variant="h6" color="text.secondary">
-                She makes kugels, she tells jokes, she does it all!
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-        </Card>
-        <Card sx={{ maxWidth: 300 }}>
-          <CardActionArea>
-            <CardMedia
-              component="img"
-              height="140"
-              image="/canvas-rebel-logo.png"
-              alt="green iguana"
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
-                Canvas Rebel
-              </Typography>
-              <Typography variant="h6" color="text.secondary">
-                Meet Robin Weiss
-              </Typography>
-              <Typography variant="h6" color="text.secondary">
-                Description...
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-        </Card>
+        <h1>Articles</h1>
+        <Stack direction="row" spacing={5}>
+          {PRESS_ARTICLES.map((article) => (
+            <motion.div
+              key={article.publication}
+              whileHover={{ scale: 1.02 }}
+              transition={{
+                type: "spring",
+                stiffness: 400,
+                damping: 10,
+              }}
+            >
+              <Card sx={{ width: 300, maxWidth: 345 }}>
+                <CardActionArea href={article.url} target="_blank">
+                  <CardHeader
+                    title={article.publication}
+                    subheader={article.title}
+                  />
+                  <CardMedia
+                    component="img"
+                    height="140"
+                    image={article.imageUrl}
+                    alt={article.publication}
+                  />
+                  <CardContent>
+                    <Typography variant="subtitle1" color="text.secondary">
+                      {article.blurb}
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+              </Card>
+            </motion.div>
+          ))}
+        </Stack>
       </motion.div>
     </div>
   );

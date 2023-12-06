@@ -7,6 +7,21 @@ export const NAV_LINKS = [
   { href: "/buy", key: "buy ", label: "Buy" },
 ];
 
-// export const PRESS_ARTICLES = [
-//   { href: "/press", key: "the-shabbat-drop", title: "The Shabbat Drop" },
-// ];
+export const PRESS_ARTICLES = [
+  {
+    key: "the-shabbat-drop",
+    publication: "The Shabbat Drop",
+    title: "Meet Robin Weiss, Kugel Kween",
+    blurb: `"She makes kugels, she tells jokes, she does it all!"`,
+    imageUrl: "/shabbat-drop-logo.jpeg",
+    url: "https://theshabbatdrop.com/p/meet-robin-weiss-kugel-kween ",
+  },
+  {
+    key: "canvas-rebel",
+    publication: "Canvas Rebel",
+    title: "Meet Robin Weiss",
+    blurb: `"blurb..."`,
+    imageUrl: "/canvas-rebel-logo.jpg",
+    url: "https://canvasrebel.com/meet-robin-weiss/ ",
+  },
+];
