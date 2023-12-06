@@ -1,8 +1,13 @@
 import React, { useEffect } from "react";
+import { useRouter } from "next/router";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 
-const Home = () => {
+const RootComponent: React.FC = () => {
+  const router = useRouter();
+  // Check if the current route is the root URL
+  const isRoot = router.pathname === "/";
+  // Render the component only if it's the root URL
   const pageVariant = {
     visible: {
       opacity: 1,
@@ -21,7 +26,7 @@ const Home = () => {
       control.start("hidden");
     }
   }, [control, inView]);
-  return (
+  return isRoot ? (
     <div>
       <motion.div
         ref={ref}
@@ -41,7 +46,7 @@ const Home = () => {
         </p>
       </motion.div>
     </div>
-  );
+  ) : null;
 };
 
-export default Home;
+export default RootComponent;

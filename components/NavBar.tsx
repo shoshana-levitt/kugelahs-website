@@ -18,7 +18,7 @@ const Navbar = () => {
               alignItems="center"
               spacing={5}
             >
-              <Link href="/home">
+              <Link href="/">
                 <Image src="/logo.jpeg" alt="logo" width={75} height={75} />
               </Link>
               {NAV_LINKS.map((link) => (

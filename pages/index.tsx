@@ -2,8 +2,7 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Head from "next/head";
-
-const inter = Inter({ subsets: ["latin"] });
+import RootComponent from "@/components/RootComponent";
 
 export default function Home() {
   return (
@@ -12,6 +11,9 @@ export default function Home() {
         <title>Kugelahs</title>
       </Head>
       <Navbar />
+      <div className="pagecontainer">
+        <RootComponent />
+      </div>
     </main>
   );
 }
