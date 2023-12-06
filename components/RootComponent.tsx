@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useRouter } from "next/router";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
+import { Box } from "@mui/material";
 
 const RootComponent: React.FC = () => {
   const router = useRouter();
@@ -34,6 +35,12 @@ const RootComponent: React.FC = () => {
         initial="hidden"
         animate={control}
       >
+        <Box
+          component="img"
+          src="/homepage-image.jpg"
+          maxWidth={500}
+          alignItems="center"
+        ></Box>
         <p className="py-3">
           Kugelahs is a small woman-owned business founded by Robin Weiss. Her
           goal is to spread love for this unique Jewish dish and to bring the

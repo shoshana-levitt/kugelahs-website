@@ -61,3 +61,33 @@ export const FOOTER_INFO = [
     link: "https://www.instagram.com/kugelsandkomedians/",
   },
 ];
+
+export const KUGEL_FLAVORS = [
+  { key: "pecan-brown-sugar", flavor: "Pecan Brown Sugar" },
+  { key: "apple-pie", flavor: "Apple Pie" },
+  { key: "pumpkin-cheesecake", flavor: "Pumpkin Cheesecake" },
+];
+
+export const KUGEL_PRODUCTS = [
+  {
+    key: "mini-kugels",
+    product: "Mini Kugels",
+    serves: "1",
+    description: "Sold at Kugels & Komedians",
+    imageUrl: "/placeholder-image.jpg",
+  },
+  {
+    key: "kugel-trays",
+    product: "Kugel Trays",
+    serves: "25",
+    description: "Available via Catering",
+    imageUrl: "/placeholder-image.jpg",
+  },
+  {
+    key: "kugel-cupcakes",
+    product: "Kugel Cupcakes",
+    serves: "25",
+    description: "Available via Catering",
+    imageUrl: "/placeholder-image.jpg",
+  },
+];
