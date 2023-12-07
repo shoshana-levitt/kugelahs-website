@@ -1,14 +1,16 @@
 // NAVIGATION
-import Email from "@mui/icons-material/Email";
-import PhoneIphone from "@mui/icons-material/PhoneIphone";
-import Instagram from "@mui/icons-material/Instagram";
+import {
+  Email,
+  PhoneIphone,
+  Instagram,
+  ContactMail,
+} from "@mui/icons-material";
 
 export const NAV_LINKS = [
   { href: "/", key: "home", label: "Home" },
   { href: "/about-me", key: "about_me", label: "About Me" },
   { href: "/press", key: "press", label: "Press" },
-  { href: "/kugels", key: "kugels", label: "Kugels" },
-  { href: "/buy", key: "buy ", label: "Buy" },
+  { href: "/kugels", key: "kugels", label: "Buy Kugels" },
 ];
 
 export const PRESS_ARTICLES = [
@@ -60,6 +62,12 @@ export const FOOTER_INFO = [
     text: "@kugelsandkomedians",
     link: "https://www.instagram.com/kugelsandkomedians/",
   },
+  {
+    key: "newsletter",
+    icon: ContactMail,
+    text: "Subscribe to Newsletter",
+    link: "/",
+  },
 ];
 
 export const KUGEL_FLAVORS = [
@@ -69,13 +77,6 @@ export const KUGEL_FLAVORS = [
 ];
 
 export const KUGEL_PRODUCTS = [
-  {
-    key: "mini-kugels",
-    product: "Mini Kugels",
-    serves: "1",
-    description: "Sold at Kugels & Komedians",
-    imageUrl: "/placeholder-image.jpg",
-  },
   {
     key: "kugel-trays",
     product: "Kugel Trays",
@@ -88,6 +89,20 @@ export const KUGEL_PRODUCTS = [
     product: "Kugel Cupcakes",
     serves: "25",
     description: "Available via Catering",
+    imageUrl: "/placeholder-image.jpg",
+  },
+  {
+    key: "mini-kugels",
+    product: "Mini Kugels",
+    serves: "1",
+    description: "Sold at Kugels & Komedians",
+    imageUrl: "/placeholder-image.jpg",
+  },
+  {
+    key: "kugel-class",
+    product: "Book a Kugel Klass",
+    serves: "1",
+    description: "Learn how to make kugels with me!",
     imageUrl: "/placeholder-image.jpg",
   },
 ];
