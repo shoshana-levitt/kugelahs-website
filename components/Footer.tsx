@@ -9,7 +9,7 @@ const Footer = () => {
     <div>
       <AppBar
         position="fixed"
-        style={{ backgroundColor: "rgb(248, 182, 226)", boxShadow: "none" }}
+        style={{ backgroundColor: "#ffe8f7", boxShadow: "none" }}
         sx={{ top: "auto", bottom: 0, p: 0.01 }}
       >
         <Toolbar>

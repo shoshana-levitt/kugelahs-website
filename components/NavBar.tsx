@@ -8,30 +8,30 @@ const Navbar = () => {
     <div>
       <AppBar
         position="fixed"
-        style={{ backgroundColor: "rgb(248, 182, 226)", boxShadow: "none" }}
+        style={{ backgroundColor: "transparent", boxShadow: "none" }}
       >
-        <Toolbar sx={{ p: 1 }}>
-          <Box sx={{ display: "flexBetween", flexGrow: 1 }}>
-            <Stack
-              direction="row"
-              justifyContent="center"
-              alignItems="center"
-              spacing={5}
-            >
-              <Link href="/">
-                <Image src="/logo.jpeg" alt="logo" width={75} height={75} />
-              </Link>
-              {NAV_LINKS.map((link) => (
-                <Link
-                  href={link.href}
-                  key={link.key}
-                  className="regular-16 text-black flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold"
-                >
-                  {link.label}
-                </Link>
-              ))}
-            </Stack>
+        <Toolbar sx={{ p: -1 }}>
+          <Box sx={{ display: "flex", flexGrow: 1 }}>
+            <Link href="/">
+              <Image src="/logo.jpeg" alt="logo" width={150} height={150} />
+            </Link>
           </Box>
+          <Stack
+            direction="row"
+            justifyContent="center"
+            alignItems="flex-start"
+            spacing={5}
+          >
+            {NAV_LINKS.map((link) => (
+              <Link
+                href={link.href}
+                key={link.key}
+                className="regular-16 text-black flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold"
+              >
+                {link.label}
+              </Link>
+            ))}
+          </Stack>
         </Toolbar>
       </AppBar>
       <Toolbar></Toolbar>
