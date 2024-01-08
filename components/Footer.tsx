@@ -26,6 +26,7 @@ const Footer = () => {
                     size="small"
                     startIcon={<item.icon />}
                     href={item.link}
+                    key={item.key}
                     target="_blank"
                     disableRipple
                     sx={{
@@ -54,6 +55,7 @@ const Footer = () => {
                       },
                     }}
                     style={{ textTransform: "none" }}
+                    key={item.key}
                   >
                     {item.text}
                   </Button>
