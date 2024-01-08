@@ -39,8 +39,15 @@ const Press = () => {
         initial="hidden"
         animate={control}
       >
-        <h1>Articles</h1>
-        <Stack direction="row" spacing={5}>
+        <Typography variant="h3" align="center" padding={3}>
+          Featured In
+        </Typography>
+        <Stack
+          direction="row"
+          alignItems="flex-start"
+          justifyContent="center"
+          spacing={5}
+        >
           {PRESS_ARTICLES.map((article) => (
             <motion.div
               key={article.publication}
