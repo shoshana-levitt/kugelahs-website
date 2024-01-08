@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useRouter } from "next/router";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
-import { Box } from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
 
 const RootComponent: React.FC = () => {
   const router = useRouter();
@@ -35,22 +35,30 @@ const RootComponent: React.FC = () => {
         initial="hidden"
         animate={control}
       >
-        <Box
-          component="img"
-          src="/homepage-image.jpg"
-          maxWidth={500}
-          alignItems="center"
-        ></Box>
-        <p className="py-3">
-          Kugelahs is a small woman-owned business founded by Robin Weiss. Her
-          goal is to spread love for this unique Jewish dish and to bring the
-          Jewish community together ♥
-        </p>
-        <p className="py-3">
-          Robin Weiss is a Kugler, Komedian and works a 9-5. She enjoys building
-          community and spreading joy and laughter through her kugels comedy.
-          She produces a monthly show with her former hebrew school teacher.
-        </p>
+        <Stack direction="row" alignItems="center">
+          <Box
+            component="img"
+            src="/homepage-image.jpg"
+            maxWidth={500}
+            maxHeight={350}
+            alignItems="center"
+            display="flex"
+          ></Box>
+          <Stack direction="column" spacing={3} padding={3}>
+            <Typography variant="h1">Kugelahs</Typography>
+            <Typography variant="h5">
+              is a small woman-owned business founded by Robin Weiss. Her goal
+              is to spread love for this unique Jewish dish and to bring the
+              Jewish community together ♥
+            </Typography>
+            <Typography variant="h5">
+              Robin Weiss is a Kugler, Komedian and works a 9-5. She enjoys
+              building community and spreading joy and laughter through her
+              kugels comedy. She produces a monthly show with her former hebrew
+              school teacher.
+            </Typography>
+          </Stack>
+        </Stack>
       </motion.div>
     </div>
   ) : null;
