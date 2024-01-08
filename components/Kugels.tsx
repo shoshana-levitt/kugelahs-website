@@ -44,7 +44,7 @@ const Kugels = () => {
         animate={control}
       >
         <Stack direction="column" spacing={5}>
-          <Stack direction="row" spacing={5} alignItems="center">
+          <Stack direction="row" spacing={5} alignItems="flex-start">
             {KUGEL_PRODUCTS.map((product) => (
               <Card sx={{ width: 300, maxWidth: 345 }}>
                 <CardHeader
@@ -109,7 +109,12 @@ const Kugels = () => {
             />
             {/* </Box> */}
           </Stack>
-          <Stack direction="row" spacing={5} alignItems="center">
+          <Stack
+            direction="row"
+            spacing={5}
+            alignItems="center"
+            justifyContent="center"
+          >
             <Button
               variant="contained"
               color="secondary"
