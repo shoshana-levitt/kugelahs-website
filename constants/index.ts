@@ -7,10 +7,10 @@ import {
 } from "@mui/icons-material";
 
 export const NAV_LINKS = [
-  { href: "/", key: "home", label: "Home" },
-  { href: "/about-me", key: "about_me", label: "About Me" },
-  { href: "/press", key: "press", label: "Press" },
-  { href: "/kugels", key: "kugels", label: "Buy Kugels" },
+  { href: "/", key: "home", label: "home" },
+  { href: "/about-me", key: "about_me", label: "about me" },
+  { href: "/press", key: "press", label: "press" },
+  { href: "/kugels", key: "kugels", label: "buy kugels" },
 ];
 
 export const PRESS_ARTICLES = [
