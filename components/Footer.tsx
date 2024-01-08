@@ -9,8 +9,8 @@ const Footer = () => {
     <div>
       <AppBar
         position="fixed"
-        style={{ backgroundColor: "#ffe8f7", boxShadow: "none" }}
-        sx={{ top: "auto", bottom: 0, p: 0.01 }}
+        style={{ backgroundColor: "transparent", boxShadow: "none" }}
+        sx={{ backdropFilter: "blur(50px)", top: "auto", bottom: 0, p: 0.01 }}
       >
         <Toolbar>
           <Box sx={{ mx: "auto" }}>
