@@ -60,21 +60,17 @@ const Press = () => {
             >
               <Card sx={{ width: 300, maxWidth: 345 }}>
                 <CardActionArea href={article.url} target="_blank">
-                  <CardHeader
-                    title={article.publication}
-                    subheader={article.title}
-                  />
                   <CardMedia
                     component="img"
                     height="140"
                     image={article.imageUrl}
                     alt={article.publication}
                   />
-                  <CardContent>
-                    <Typography variant="subtitle1" color="text.secondary">
-                      {article.blurb}
-                    </Typography>
-                  </CardContent>
+
+                  <CardHeader
+                    title={article.publication}
+                    subheader={article.title}
+                  />
                 </CardActionArea>
               </Card>
             </motion.div>
