@@ -13,7 +13,7 @@ const Navbar = () => {
         <Toolbar sx={{ p: -1 }}>
           <Box sx={{ display: "flex", flexGrow: 1 }}>
             <Link href="/">
-              <Image src="/logo.png" alt="logo" width={150} height={150} />
+              <Image src="/full-logo.png" alt="logo" width={150} height={150} />
             </Link>
           </Box>
           <Stack

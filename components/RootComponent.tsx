@@ -45,7 +45,13 @@ const RootComponent: React.FC = () => {
             display="flex"
           ></Box>
           <Stack direction="column" spacing={3} padding={3}>
-            <Typography variant="h1">Kugelahs</Typography>
+            <Box
+              component="img"
+              src="/logo.png"
+              maxWidth={300}
+              alignItems="center"
+              display="flex"
+            ></Box>
             <Typography variant="h5">
               is a small woman-owned business founded by Robin Weiss. Her goal
               is to spread love for this unique Jewish dish and to bring the
