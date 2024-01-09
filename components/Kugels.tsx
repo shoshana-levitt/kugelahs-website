@@ -63,9 +63,13 @@ const Kugels = () => {
               </Card>
             ))}
           </Stack>
+
           <Stack direction="column" spacing={2} alignItems="center">
             <Stack direction="row" spacing={2}>
-              <Chip
+              <Typography variant="h6" align="center">
+                Flavors:
+              </Typography>
+              {/* <Chip
                 icon={<CalendarMonth />}
                 key="flavor-of-the-month"
                 label="December's Flavor: Feeling Gelty (Pecan Chocolate)"
@@ -76,7 +80,7 @@ const Kugels = () => {
                     cursor: "default",
                   },
                 }}
-              />
+              /> */}
               {KUGEL_FLAVORS.map((kugel) => (
                 <Chip
                   key={kugel.key}

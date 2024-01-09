@@ -71,6 +71,7 @@ export const FOOTER_INFO = [
 ];
 
 export const KUGEL_FLAVORS = [
+  { key: "pecan-chocolate", flavor: "Pecan Chocolate" },
   { key: "pecan-brown-sugar", flavor: "Pecan Brown Sugar" },
   { key: "apple-pie", flavor: "Apple Pie" },
   { key: "pumpkin-cheesecake", flavor: "Pumpkin Cheesecake" },
@@ -82,27 +83,27 @@ export const KUGEL_PRODUCTS = [
     product: "Kugel Trays",
     serves: "25",
     description: "Available via Catering",
-    imageUrl: "/placeholder-image.jpg",
+    imageUrl: "/kugel-doodle.png",
   },
   {
     key: "kugel-cupcakes",
     product: "Kugel Cupcakes",
     serves: "25",
     description: "Available via Catering",
-    imageUrl: "/placeholder-image.jpg",
+    imageUrl: "/kugel-doodle.png",
   },
   {
     key: "mini-kugels",
     product: "Mini Kugels",
     serves: "1",
     description: "Sold at Kugels & Komedians",
-    imageUrl: "/placeholder-image.jpg",
+    imageUrl: "/kugel-doodle.png",
   },
   {
     key: "kugel-class",
     product: "Book a Kugel Klass",
     serves: "1",
     description: "Learn how to make kugels with me!",
-    imageUrl: "/placeholder-image.jpg",
+    imageUrl: "/kugel-doodle.png",
   },
 ];
