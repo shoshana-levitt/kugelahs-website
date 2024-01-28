@@ -71,6 +71,7 @@ export const FOOTER_INFO = [
 ];
 
 export const KUGEL_FLAVORS = [
+  { key: "chocolate-chip-cookie", flavor: "Chocolate Chip Cookie" },
   { key: "pecan-chocolate", flavor: "Pecan Chocolate" },
   { key: "pecan-brown-sugar", flavor: "Pecan Brown Sugar" },
   { key: "apple-pie", flavor: "Apple Pie" },

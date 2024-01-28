@@ -30,7 +30,7 @@ const AboutMe = () => {
         initial="hidden"
         animate={control}
       >
-        <Typography variant="h3" padding={2}>
+        <Typography variant="h4" padding={2}>
           How It All Started
         </Typography>
         <Typography variant="h6" padding={2}>
@@ -41,7 +41,7 @@ const AboutMe = () => {
           with much enthusiasm, said “This kugel is delicious, Robin, you need
           to sell this!” So, I am doing just that ☺
         </Typography>
-        <Typography variant="h3" padding={2}>
+        <Typography variant="h4" padding={2}>
           Behind The Name
         </Typography>
         <Typography variant="h6" padding={2}>

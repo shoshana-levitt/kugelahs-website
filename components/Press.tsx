@@ -39,7 +39,7 @@ const Press = () => {
         initial="hidden"
         animate={control}
       >
-        <Typography variant="h3" align="center" padding={3}>
+        <Typography variant="h4" align="center" padding={3}>
           Featured In
         </Typography>
         <Stack
