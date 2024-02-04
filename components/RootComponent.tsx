@@ -52,17 +52,19 @@ const RootComponent: React.FC = () => {
               alignItems="center"
               display="flex"
             ></Box>
-            <Typography variant="h6">
-              is a small woman-owned business founded by Robin Weiss. Her goal
-              is to spread love for this unique Jewish dish and to bring the
-              Jewish community together ♥
-            </Typography>
-            <Typography variant="h6">
-              Robin Weiss is a Kugler, Komedian and works a 9-5. She enjoys
-              building community and spreading joy and laughter through her
-              kugels comedy. She produces a monthly show with her former hebrew
-              school teacher.
-            </Typography>
+            <Box width={700}>
+              <Typography variant="h6" padding={2}>
+                is a small woman-owned business founded by Robin Weiss. Her goal
+                is to spread love for this unique Jewish dish and to bring the
+                Jewish community together ♥
+              </Typography>
+              <Typography variant="h6" padding={2}>
+                Robin Weiss is a Kugler, Komedian and works a 9-5. She enjoys
+                building community and spreading joy and laughter through her
+                kugels comedy. She produces a monthly show with her former
+                hebrew school teacher.
+              </Typography>
+            </Box>
           </Stack>
         </Stack>
       </motion.div>
