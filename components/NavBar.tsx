@@ -10,18 +10,15 @@ const Navbar = () => {
         position="fixed"
         style={{ backgroundColor: "transparent", boxShadow: "none" }}
       >
-        <Toolbar sx={{ p: -1 }}>
+        <Toolbar
+          sx={{ display: "flex", flexGrow: 1, alignItems: "flex-start" }}
+        >
           <Box sx={{ display: "flex", flexGrow: 1 }}>
             <Link href="/">
               <Image src="/full-logo.png" alt="logo" width={150} height={150} />
             </Link>
           </Box>
-          <Stack
-            direction="row"
-            justifyContent="center"
-            alignItems="flex-start"
-            spacing={5}
-          >
+          <Stack direction="row" justifyContent="center" spacing={5} mt={3}>
             {NAV_LINKS.map((link) => (
               <Link
                 href={link.href}
