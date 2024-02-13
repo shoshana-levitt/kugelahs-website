@@ -98,8 +98,8 @@ const Kugels = () => {
             {/* <Box sx={{ width: 500 }}> */}
             <Chip
               icon={<AutoAwesome />}
-              key="custom-creations"
-              label="Custom Creations: Have a specific request? I'll stir up a flavor that's just right for
+              key="kustom-kreations"
+              label="Kustom Kreations: Have a specific request? I'll stir up a flavor that's just right for
                 you and your guests for your next event!"
               variant="filled"
               style={{ backgroundColor: "#primary" }}
@@ -124,17 +124,17 @@ const Kugels = () => {
           >
             <Button
               variant="contained"
-              color="secondary"
               href="/"
               target="_blank"
+              className="button"
             >
               Purchase via Pocketshop
             </Button>
             <Button
               variant="contained"
-              color="secondary"
               href="mailto:koolkugels@gmail.com"
               target="_blank"
+              className="button"
             >
               Inqiure via Email
             </Button>
