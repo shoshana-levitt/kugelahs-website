@@ -127,6 +127,12 @@ const Kugels = () => {
               href="/"
               target="_blank"
               className="button"
+              sx={{
+                backgroundColor: "magenta",
+                ":hover": {
+                  backgroundColor: "pink",
+                },
+              }}
             >
               Purchase via Pocketshop
             </Button>
@@ -135,6 +141,12 @@ const Kugels = () => {
               href="mailto:koolkugels@gmail.com"
               target="_blank"
               className="button"
+              sx={{
+                backgroundColor: "magenta",
+                ":hover": {
+                  backgroundColor: "pink",
+                },
+              }}
             >
               Inqiure via Email
             </Button>
